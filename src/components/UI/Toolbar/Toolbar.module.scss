@@ -1,0 +1,32 @@
+@import '../../../assets/shared/variables.scss';
+
+.Toolbar{
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 90;
+	background-color: $primary-color;
+	position: fixed
+}
+
+.Toolbar  nav{
+  height: 100%;
+}
+
+.Logo {
+  height: 80%;
+}
+
+@media (max-width: 949px) {
+  .DesktopOnly {
+      //display: none;
+  }
+}
+
+

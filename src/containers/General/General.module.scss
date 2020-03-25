@@ -1,0 +1,61 @@
+@import '../../assets/shared/variables.scss';
+.General {
+  .Header {
+		height: 180px;
+    text-align: center;
+    background: $primary-color;
+    -webkit-box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.35);
+		color: #ffffff;
+		position: fixed;
+		width: 100%;
+		//display: flex;
+		position: fixed;
+		width: 100%;
+		z-index: 5;
+		
+
+    h1 {
+      font-weight: 300;
+    }
+
+    .InputContainer{
+      position: relative;
+      width: 70%;
+      margin: 0 auto;
+      max-width: 650px;
+  
+      button {
+        border: none;
+        font-size: 18px;
+        background-color: transparent;
+        color: #969696;
+        position: absolute;
+        top: 24%;
+        right: 15px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+    }
+  }
+  .Content {
+    width: 100%;
+    margin: 0 auto;
+		padding-top: 190px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+	}
+	
+  .LastItem {
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  .Content {
+    width: 70% !important;
+  }
+}

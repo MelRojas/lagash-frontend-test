@@ -1,0 +1,32 @@
+@import '../../../assets/shared/variables.scss';
+
+.ScrollToTop {
+  background-color: $primary-color;
+  width: 55px;
+  height: 55px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50px;
+  border: none;
+  font-size: 35px;
+  -webkit-box-shadow: 0px 0px 14px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px -6px rgba(0, 0, 0, 0.75);
+	opacity: 0.5;
+	cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .Arrow {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -18px;
+    margin-left: -18px;
+    transform: rotate(-45deg);
+  }
+}

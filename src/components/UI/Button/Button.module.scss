@@ -1,0 +1,23 @@
+@import '../../../assets/shared/variables.scss';
+
+.Button {
+        width: 100%;
+        font: inherit;
+        margin-top: 5px;
+        padding: 10px;
+        font-weight: 700;
+    
+        cursor: pointer;
+        border: 1px solid $primary-color;
+        color: #fff;
+        background-color: $primary-color;
+        font-size: .8rem;
+        border-radius: 30px;
+}
+    
+.Button[disabled]{
+        opacity: 0.5;
+        cursor: not-allowed;
+}
+
+    

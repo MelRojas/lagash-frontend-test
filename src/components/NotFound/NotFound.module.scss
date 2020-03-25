@@ -1,0 +1,330 @@
+@import '../../assets/shared/variables.scss';
+
+.NotFound {
+    width: 100%;
+    height: calc(100vh - 77px);
+    background: $grey-background;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+
+    section {
+        position: relative;
+        top: 20vh;
+    }
+
+    .NotFoundContainer {
+        display: flex;
+        display: -ms-flexbox; /* IE10 */
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 80%;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .TextContainer {
+        margin: auto;
+        width: 100%;
+    }
+
+    .Title {
+        text-align: center;
+        font-size: 40px;
+        /*margin-top:40px;*/
+        margin-bottom: 40px;
+        position: relative;
+        color: $grey-text;
+        background: transparent;
+        z-index: 150;
+    }
+
+    .Circles {
+        /*background:#fff;*/
+        text-align: center;
+        position: relative;
+        margin-top: -60px;
+        /*box-shadow:inset -1px -4px 4px rgba(0,0,0,0.2);*/
+        z-index: 100;
+        width: 100%;
+
+        p {
+            font-size: 13rem;
+            color: $grey-background;
+            padding-top: 60px;
+            position: relative;
+            z-index: 9;
+            line-height: 100%;
+            margin: 0;
+        }
+
+        p small {
+            font-size: 2rem;
+            line-height: 100%;
+            vertical-align: top;
+        }
+
+        .Circle.Small {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: $primary-color;
+            position: absolute;
+            z-index: 1;
+            top: 10px;
+            left: 45%;
+            animation: smallmove 7s infinite cubic-bezier(1, .22, .71, .98);
+            -webkit-animation: smallmove 7s infinite cubic-bezier(1, .22, .71, .98);
+            animation-delay: 1.2s;
+            -webkit-animation-delay: 1.2s;
+        }
+
+        .Circle.Med {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: $primary-color;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 20%;
+            animation: medmove 7s infinite cubic-bezier(.32, .04, .15, .75);
+            -webkit-animation: medmove 7s infinite cubic-bezier(.32, .04, .15, .75);
+            animation-delay: 0.4s;
+            -webkit-animation-delay: 0.4s;
+        }
+
+        .Circle.Big {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: $primary-color;
+            opacity: 0.5;
+            position: absolute;
+            z-index: 1;
+            top: 0px;
+            right: 4%;
+            animation: bigmove 8s infinite;
+            -webkit-animation: bigmove 8s infinite;
+            animation-delay: 3s;
+            -webkit-animation-delay: 1s;
+        }
+    }
+
+    @-webkit-keyframes smallmove {
+        0% {
+            top: 10px;
+            left: 45%;
+            opacity: 1;
+        }
+        25% {
+            top: 300px;
+            left: 40%;
+            opacity: 0.7;
+        }
+        50% {
+            top: 240px;
+            left: 55%;
+            opacity: 0.4;
+        }
+        75% {
+            top: 100px;
+            left: 40%;
+            opacity: 0.6;
+        }
+        100% {
+            top: 10px;
+            left: 45%;
+            opacity: 1;
+        }
+    }
+    @keyframes smallmove {
+        0% {
+            top: 10px;
+            left: 45%;
+            opacity: 1;
+        }
+        25% {
+            top: 300px;
+            left: 40%;
+            opacity: 0.7;
+        }
+        50% {
+            top: 240px;
+            left: 55%;
+            opacity: 0.4;
+        }
+        75% {
+            top: 100px;
+            left: 40%;
+            opacity: 0.6;
+        }
+        100% {
+            top: 10px;
+            left: 45%;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes medmove {
+        0% {
+            top: 0px;
+            left: 20%;
+            opacity: 1;
+        }
+        25% {
+            top: 300px;
+            left: 80%;
+            opacity: 0.7;
+        }
+        50% {
+            top: 240px;
+            left: 55%;
+            opacity: 0.4;
+        }
+        75% {
+            top: 100px;
+            left: 40%;
+            opacity: 0.6;
+        }
+        100% {
+            top: 0px;
+            left: 20%;
+            opacity: 1;
+        }
+    }
+
+    @keyframes medmove {
+        0% {
+            top: 0px;
+            left: 20%;
+            opacity: 1;
+        }
+        25% {
+            top: 300px;
+            left: 80%;
+            opacity: 0.7;
+        }
+        50% {
+            top: 240px;
+            left: 55%;
+            opacity: 0.4;
+        }
+        75% {
+            top: 100px;
+            left: 40%;
+            opacity: 0.6;
+        }
+        100% {
+            top: 0px;
+            left: 20%;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes bigmove {
+        0% {
+            top: 0px;
+            right: 4%;
+            opacity: 0.5;
+        }
+        25% {
+            top: 100px;
+            right: 40%;
+            opacity: 0.4;
+        }
+        50% {
+            top: 240px;
+            right: 45%;
+            opacity: 0.8;
+        }
+        75% {
+            top: 100px;
+            right: 35%;
+            opacity: 0.6;
+        }
+        100% {
+            top: 0px;
+            right: 4%;
+            opacity: 0.5;
+        }
+    }
+    @keyframes bigmove {
+        0% {
+            top: 0px;
+            right: 4%;
+            opacity: 0.5;
+        }
+        25% {
+            top: 100px;
+            right: 40%;
+            opacity: 0.4;
+        }
+        50% {
+            top: 240px;
+            right: 45%;
+            opacity: 0.8;
+        }
+        75% {
+            top: 100px;
+            right: 35%;
+            opacity: 0.6;
+        }
+        100% {
+            top: 0px;
+            right: 4%;
+            opacity: 0.5;
+        }
+    }
+
+    .GoToHome {
+        margin: auto;
+        display: table;
+        /* width: 100%; */
+        border: 1px solid $grey-border;
+        padding: 9px;
+        border-radius: 41px;
+        color: $grey-text;
+        z-index: 150;
+        position: relative;
+        font-size: 1rem;
+        width: 280px;
+        text-align: center;
+        font-weight: 400;
+        cursor: pointer;
+        text-decoration: none;
+
+        ::after {
+            content: "";
+            border-radius: 41px;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-box-shadow: -1px 8px 60px 0px rgba(115, 115, 115, 0.59);
+            -moz-box-shadow: -1px 8px 60px 0px rgba(115, 115, 115, 0.59);
+            box-shadow: -1px 8px 60px 0px rgba(115, 115, 115, 0.59);
+            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        :hover::after {
+            opacity: 1;
+        }
+    }
+
+
+    @media (min-width: 1024px) {
+        .TextContainer {
+            width: 40%;
+        }
+        .Circles {
+            width: 60%;
+        }
+    }
+}
+
